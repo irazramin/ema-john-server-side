@@ -42,6 +42,7 @@ async function run() {
       const cursor = productCollection.find(query);
       const result = await cursor.count();
       res.send({ result });
+      console.log(result)
     });
   } finally {
   }
